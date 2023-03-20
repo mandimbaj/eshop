@@ -6,8 +6,8 @@
             <h4>Category Page</h4>
         </div>
         <div class="card-body">
-            <table class="table table-bordered table-striped">
-                <thead>
+            <table class="table table-striped table-sm">
+                <thead class="thead-dark">
                     <tr>
                         <th>Id</th>
                         <th>Name</th>
@@ -26,7 +26,7 @@
                                 <img src="{{ asset('assets/uploads/category/'.$item->image)}}" class="cate-image" alt="Image here">
                             </td>
                             <td>
-                                <button class="btn btn-primary">Edit</button>
+                                <a href="{{ url('edit-prod/'.$item->id)}}" class="btn btn-primary">Edit</a>
                                 <button class="btn btn-danger">Delete</button>
                             </td>
                         </tr>                        
